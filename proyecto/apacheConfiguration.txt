@@ -1,0 +1,16 @@
+	###FLASK_BUILDING 7 ####
+	WSGIScriptAlias /flask_building/ /home/desweb/www/apps/desweb/dw/flask_building7/flask_building_wsgi.py/
+	Alias /flask_building_static/ /home/desweb/www/apps/desweb/dw/flask_building7/static/
+	    <directory /home/desweb/www/apps/desweb/dw/flask_building7>
+			<Files flask_building_wsgi.py>
+			    Order deny,allow
+			    Allow from all
+			</Files>
+	    </directory>
+	<Directory /home/desweb/www/apps/desweb/dw/flask_building7/static>
+	  Options FollowSymLinks MultiViews
+	  AllowOverride None
+	  Order allow,deny
+	  allow from all
+	</Directory>
+	###FLASK_BUILDING 7 ####
