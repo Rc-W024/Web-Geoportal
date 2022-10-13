@@ -1,9 +1,9 @@
 # Web Development and GeoPortal
-The project is developed through a virtual machine equipped with a Linux system, and users on the published spatial data portal are allowed to log in, query and modify related data. This project aims to apply related skills developed on the back-end and front-end to spatial intelligence processing.
+The project (completed in 2019) is developed through a virtual machine equipped with a Linux system, and users on the published spatial data portal are allowed to log in, query and modify related data. This project aims to apply related skills developed on the back-end and front-end to spatial intelligence processing.
 
 This Subject Project was done in collaboration with two other French colleagues, thanks to Clément Dujardin and Antoine Ducasse for their support.
 
-研究生课程项目，该项目通过搭载Linux系统的虚拟机完成开发，允许用户在已发布的空间数据门户网站上执行登录、查询和修改相关数据等操作，项目旨在将在后端和前端开发的相关技能应用于空间情报处理。此外，本项目由我和另外两名法国同事合作完成，感谢Clément Dujardin和Antoine Ducasse的支持。
+研究生课程项目（完成于2019年），该项目通过搭载Linux系统的虚拟机完成开发，允许用户在已发布的空间数据门户网站上执行登录、查询和修改相关数据等操作，项目旨在将在后端和前端开发的相关技能应用于空间情报处理。此外，本项目由我和另外两名法国同事合作完成，感谢Clément Dujardin和Antoine Ducasse的支持。
 
 ## Basic Funtions
 * Development of the "China Geographic National Conditions Data Display Platform";<br>
