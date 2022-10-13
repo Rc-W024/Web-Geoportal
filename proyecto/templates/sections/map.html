@@ -1,0 +1,44 @@
+
+	<div id="map" class="tab-pane fade in active" style="width: 100%">
+	    <!-- MY CODE -->
+        <script type="text/javascript" src="js/main7.js"></script>
+        <script type="text/javascript" src="js/map/mapMain.js"></script>
+        
+	    <div id="divMapButtons" class="btn-group">
+	      <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Toogle map menu"><img id="buttonToogleMapForms" src="img/glyphicons_free/glyphicons/png/glyphicons-517-menu-hamburger.png" alt="Show/hide menu" height="20" width="20"></button>
+	      <!--
+	      <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Draw new building"><img id="buttonMapDraw" src="img/glyphicons_free/glyphicons/png/glyphicons-31-pencil.png" alt="Show/hide menu" height="20" width="20"></button>
+	      <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Edit building geometry"><img id="buttonEditGeometry" src="img/glyphicons_free/glyphicons/png/glyphicons-151-edit.png" alt="Show/hide menu" height="20" width="20"></button>
+	      <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Delete selected building"><img id="buttonDeleteSelectedBuilding" src="img/glyphicons_free/glyphicons/png/glyphicons-208-remove.png" alt="Show/hide menu" height="20" width="20"></button>
+	      -->
+	      <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Get information about Provincia"><img id="buttonGetBuildingInfo" src="img/glyphicons_free/glyphicons/png/glyphicons-195-question-sign.png" alt="Show/hide menu" height="20" width="20"></button>
+	      <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Get information"><img id="buttonGetInfo" src="img/glyphicons_free/glyphicons/png/012000002319.png" alt="Show/hide menu" height="20" width="20"></button>
+	      <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Get information about Rural"><img id="buttonGetRuralInfo" src="img/glyphicons_free/glyphicons/png/question1142900.png" alt="Show/hide menu" height="20" width="20"></button>
+	      <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Refresh map"><img id="buttonRefreshMap" src="img/glyphicons_free/glyphicons/png/glyphicons-82-refresh.png" alt="Show/hide menu" height="20" width="20"></button>
+		</div>
+
+		<!--LEFT PANEL TO SHOW THE FORMS-->
+		<div id="divMapShowForms">
+		    <div id="divMapShowFormsPanelContainer" class="panel panel-default scroll_content">
+                <button class="btn-primary" id="buttonprovincia" >Provincia</button>
+                <button class="btn-primary" id="buttoninformacion" >Informacion</button>
+                <button class="btn-primary" id="buttonruralpuntos" >Punto rural</button>
+
+                {% include 'forms/building4.html' %}
+                {% include 'forms/building4_info.html' %}
+                {% include 'forms/building4_ru.html' %}
+
+                <div id="div_message">
+                    <p id="p_message"></p>
+                </div>
+                <div id="info"></div>
+                {% include 'forms/divGetBuilding5.html' %}
+                {% include 'forms/divGetBuilding6.html' %}
+                {% include 'forms/divGetBuilding7.html' %}
+		    </div>
+		</div>
+	    <div id="div_map_mouse_position_control" class="panel panel-default">
+	        <p><span id="map_mouse_position_control"></span></p>
+	    </div>    
+	</div>
+

@@ -1,0 +1,48 @@
+<div id="divruralpuntos">
+    <!-- Utilizo solo inputs type text porque hay problema con las comas de los números -->
+    <form id="rural_puntos" class="form-horizontal" onsubmit="event.preventDefault();"><!-- The form name is the same that the table name -->
+        <!-- Prevent default evita que el formulario se envíe -->
+        <h4><strong>Data:</strong></h4>
+        <div class="form-group">
+            <label for="gid"  class="control-label col-xs-3">gid:</label>
+            <div class="col-xs-9">
+                <input type="number" class="form-control" id="gid" name="gid" data-toggle="tooltip" title="gid">
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="name" class="control-label col-xs-3">Name:</label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control" id="name" name="name" data-toggle="tooltip" title="Write the name">
+            </div>
+        </div>
+         
+        <div class="form-group">
+            <label for="class" class="control-label col-xs-4">Class:</label>
+            <div class="col-xs-8">
+                <input type="text" class="form-control" id="class" name="class" data-toggle="tooltip" title="class">
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="id" class="control-label col-xs-4">Id:</label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control" id="id" name="id" data-toggle="tooltip" title="id">
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="coordinates" class="control-label col-xs-3">Coordinates:</label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control" id="geom" name="geom" data-toggle="tooltip" title="coordinates">
+            </div>
+        </div>
+        <div id="buttons_rural_puntos" class="btn-group">
+            <!-- Saco los botones fuera para que no se envíe el formulario -->
+            <button class="btn-primary" id="reset_building" type="reset" data-toggle="tooltip" title="Cleans the form">Reset form</button>
+            <button class="btn-primary" id="insert_building_ru" data-toggle="tooltip" title="Creates new datas with de current data form">Insert</button>
+            <button class="btn-primary" id="update_building_ru" data-toggle="tooltip" title="Saves the changes in the current datas">Update</button>
+            <button class="btn-danger" id="delete_building_ru" data-toggle="tooltip" title="Deletes the current datas">Delete</button>
+        </div>
+    </form> 
+</div> <!-- divFormBuildings--> 

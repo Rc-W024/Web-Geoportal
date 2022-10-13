@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <title>CHINA</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <base href="{{dSettings.URL_STATIC}}" /><!--Folder for the static files of this app-->
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <meta name="description" content="Web develop and geoportals subject" />
+    <meta name="author" content="Wu Ruochen" />
+    <meta name="keywords" content="Master, China, geomatics, geoinformation, upv, geoportal, mapserver, openlayers, javascript"/>
+    <link href="css/styles.css" rel="stylesheet" type="text/css"><!--Indica cómo se muestran los elementos y su distribución-->
+
+    <!-- JQUERY 3.3.1 -->
+    <script type="text/javascript" src="js/externalLibs/jquery/jquery-3.3.1.min.js"></script>
+
+    <!-- OPENLAYERS 4.6.5 -->
+    <link rel="stylesheet" type="text/css" href="js/externalLibs/openLayers/v4.6.5-dist/ol.css">
+    <script type="text/javascript" src="js/externalLibs/openLayers/v4.6.5-dist/ol.js"></script>
+
+    <!-- LAYER SWITCHER -->
+    <link rel="stylesheet" type="text/css" href="js/externalLibs/openLayers/layer-switcher/ol-layerswitcher.css">
+    <script type="text/javascript" src="js/externalLibs/openLayers/layer-switcher/ol-layerswitcher.js"></script>
+
+    <!-- bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="js/externalLibs/bootstrap-3.3.7/bootstrap.min.css">
+    <script src="js/externalLibs/bootstrap-3.3.7/bootstrap.min.js"></script>
+
+<!-- MY CODE -->
+    <script type="text/javascript" src="js/globalVars.js"></script>  
+    <script type="text/javascript" src="js/lib/openLayersUtilities.js "></script> 
+    <script type="text/javascript" src="js/lib/openLayersLabelUtilities.js"></script>
+    <script type="text/javascript" src="js/lib/jsForms.js"></script>
+    <script type="text/javascript" src="js/lib/generalUtilities.js"></script>
+    <script type="text/javascript" src="js/general7.js"></script>
+    <script type="text/javascript" src="js/buildings.js"></script>
+    <script type="text/javascript" src="js/map/mapInteractions/mapSelect.js"></script>
+    <script type="text/javascript" src="js/map/mapInteractions/mapDraw.js"></script>
+    <script type="text/javascript" src="js/map/mapInteractions/mapSnap.js"></script>
+    <script type="text/javascript" src="js/map/mapMain.js"></script>
+    <script type="text/javascript" src="js/main7.js"></script>
+       
+    <!-- MY CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css"><!--Indica cómo se muestran los elementos y su distribución-->
+    <link rel="stylesheet" type="text/css" href="css/map.css"><!--Indica cómo se muestran los elementos y su distribución-->
+    <!-- 
+        JAVASCRIPT CODE CHANGED FROM PYTHON 
+        CONTAINS IMPORTANT GLOBAL VARIABLES
+    -->
+    <script type="text/javascript">
+         URL_APP="{{dSettings.URL_APP}}";
+         URL_WMS_GEOSERVER_SERVICE="{{dSettings.URL_WMS_GEOSERVER_SERVICE}}";
+         URL_WFS_GEOSERVER_SERVICE="{{dSettings.URL_WFS_GEOSERVER_SERVICE}}";
+         JAVASCRIPT_DEBUG_MODE={{dSettings.JAVASCRIPT_DEBUG_MODE}};         
+    </script>
+    <style>
+    .div1{
+        display:inline-block;    width:900px;    height:925px;
+    }
+    .div2{
+        display:inline-block;    width:900px;    height:925px;
+    }
+    </style>
+</head>
+<body>
+<div id="content" class="container-fluid">
+    <div class="row">
+          <div class="col-lg-12">
+            {% if dSettings.JAVASCRIPT_DEBUG_MODE=='true' %}
+            {% endif %}           
+            {% include 'sections/mainNav.html' %}
+          </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="tab-content" >
+                 {% include 'sections/map.html' %}
+                 {% include 'sections/divTabla.html' %}
+                 {% include 'sections/divAyuda.html' %}
+                 {% include 'sections/divSobre.html' %}
+            </div>
+        </div>
+     </div>
+    {% include 'forms/divModalLogin.html' %}
+</div>    
+</body>
+</html>
