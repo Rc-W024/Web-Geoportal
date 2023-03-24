@@ -1,5 +1,5 @@
 # Web Development and GeoPortal
-The project (completed in 2019) is developed through a virtual machine equipped with a Linux system, and users on the published spatial data portal are allowed to log in, query and modify related data. This project aims to apply related skills developed on the back-end and front-end to spatial intelligence processing.
+The project (completed in 2019) is developed through a virtual machine equipped with a Linux system, and users on the published spatial data portal are allowed to log in, query and modify related data. This project aims to apply related skills developed on the back-end and front-end to GEOINT processing.
 
 This Subject Project was done in collaboration with two other French colleagues, thanks to Clément Dujardin and Antoine Ducasse for their support.
 
