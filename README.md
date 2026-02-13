@@ -1,4 +1,4 @@
-# Web Development and GeoPortal
+# Web Development and GEOINT
 ![](https://skillicons.dev/icons?i=py,js,html,css,eclipse,linux)
 
 The project (completed in 2019) is developed through a virtual machine equipped with a Linux system, and users on the published spatial data portal are allowed to log in, query and modify related data. This project aims to apply related skills developed on the back-end and front-end to GEOINT processing.
